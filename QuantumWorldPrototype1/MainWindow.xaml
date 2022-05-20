@@ -1,0 +1,27 @@
+﻿<Window x:Name="QuantumWorld" x:Class="QuantumWorldPrototype1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuantumWorldPrototype1"
+        mc:Ignorable="d"
+        Title="Overview" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="6*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="3*"/>
+        </Grid.ColumnDefinitions>
+        <StackPanel x:Name="MenuPanel" Margin="10,10,10,10" Background="#FF13264C" Grid.Row="1">
+            <Button x:Name="OverviewMenuButton" Content="Overview" Margin="10,10,10,10" VerticalAlignment="Center" Click="OverviewMenuButton_Click"/>
+            <Button x:Name="BuildingsMenuButton" Content="Buildings" Margin="10,10,10,10" VerticalAlignment="Center" Click="BuildingsMenuButton_Click"/>
+        </StackPanel>
+        <ListBox x:Name="ResourcesListBox" Grid.Column="1" Background="#FF13264C" Margin="10,10,10,10">
+            <ListBoxItem x:Name="CarbonFiberListBoxItem" Content="Carbon Fiber: 0" Foreground="White" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Center"/>
+        </ListBox>
+
+    </Grid>
+</Window>

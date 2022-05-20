@@ -1,0 +1,24 @@
+﻿<Window x:Class="QuantumWorldPrototype1.Buildings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuantumWorldPrototype1"
+        mc:Ignorable="d"
+        Title="Buildings" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <StackPanel x:Name="MenuPanel" Margin="10,72,610,10" Background="#FF13264C">
+            <Button x:Name="OverviewMenuButton" Content="Overview" Margin="10,10,10,10" VerticalAlignment="Center" Click="OverviewMenuButton_Click"/>
+            <Button x:Name="BuildingsMenuButton" Content="Buildings" Margin="10,10,10,10" VerticalAlignment="Center" Click="BuildingsMenuButton_Click"/>
+        </StackPanel>
+        <ListBox x:Name="ResourcesListBox" Background="#FF13264C" Margin="210,10,10,382">
+            <ListBoxItem x:Name="CarbonFiberListBoxItem" Content="Carbon Fiber: 0" Foreground="White" HorizontalAlignment="Left" Margin="10,10,10,10" VerticalAlignment="Center"/>
+        </ListBox>
+        <StackPanel x:Name="CarbonFiberBuildingPanel" Margin="210,125,440,159" Width="150" Height="150" Background="#FF13264C">
+            <Label x:Name="CarbonFiberBuildingLevelLabel" Content="lvl: 0" HorizontalAlignment="Stretch" Margin="10,10,10,10" Background="#00000000" Foreground="White"/>
+            <Button x:Name="CarbonFiberBuildingUpgradeButton" Content="Upgrade" HorizontalAlignment="Center"/>
+            <Label x:Name="CarbonFiberBuildingCostLabel" Content="Cost: 0" Margin="10,10,10,10" Foreground="White"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
